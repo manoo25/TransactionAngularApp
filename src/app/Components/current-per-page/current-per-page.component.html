@@ -1,0 +1,14 @@
+
+<div class="d-flex align-items-center gap-2 ContainerCurrentSelector">
+    <span class="text-secondary">Rows per page:</span>
+<select #perPage class="CurrentPerPage px-1" aria-label="Default select example"
+(change)="ChangeCurrent(perPage.value)">
+ 
+  <option value="10" selected>10</option>
+  <option value="15">15</option>
+  <option value="20">20</option>
+  <option value="30">30</option>
+  <option value="40">40</option>
+</select>
+
+</div>

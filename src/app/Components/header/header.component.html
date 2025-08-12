@@ -1,0 +1,32 @@
+<div style="width: 95%;" class="   m-auto px-3 pt-3 pt-md-0">
+<div class="row w-100 ">
+  <div class="col-12 col-sm-6 ">
+  <div class="inp position-relative ">
+    <input
+     #search style="padding-left: 30px;" type="search" placeholder=" account Name,Id"
+    (input)="transactionsService.filterTransaction(search.value,searchType.value)"
+    >
+    <i style="left: 20px;color: var(--main-color); font-size: 15px;" class="fa-solid fa-magnifying-glass position-absolute  top-50 translate-middle  "></i>
+</div>
+  </div>
+<div class="col-12 col-sm-6 ">
+  <div class=" justify-content-end d-sm-flex mt-3 mt-sm-0">
+        <span class="text-secondary me-1">Select Type</span>
+<select #searchType class="CurrentPerPage px-1" aria-label="Default select example"
+(change)="transactionsService.filterTransaction(search.value,searchType.value)"
+>
+ 
+  <option value="" selected>All</option>
+@for (type of transactionsService.TransactionsType; track $index) {
+      <option [value]="type" >{{type}}</option>
+}
+</select>
+</div>
+</div>
+
+
+
+</div>
+
+
+</div>

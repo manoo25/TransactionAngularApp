@@ -1,0 +1,77 @@
+@if(isLoading){
+<app-loading></app-loading>
+}
+<div
+  [class.d-none]="isLoading"
+  class="container-fluid responsive-container position-relative"
+>
+  @if(transactions.length>0){
+  <div class="user-table">
+    <table width="100%" class="table border-1">
+      <thead>
+        <tr>
+          <th>accountId</th>
+          <th>accountName</th>
+
+          <th>voucherNo</th>
+          <th class="position-relative">
+            amount
+            <span class="sortingContainer">
+              <i
+                class="fas fa-sort-up sortArrow"
+                (click)="sortHeighAmount()"
+                [class.active]="transactionsService.heighAmount"
+              ></i>
+              <i
+                class="fas fa-sort-down sortArrow"
+                (click)="sortLowAmount()"
+                [class.active]="transactionsService.lowAmount"
+              ></i>
+            </span>
+          </th>
+          <th>type</th>
+          <th>branch</th>
+          <th class="position-relative">
+            Date
+            <span style="right:15%;" class="sortingContainer">
+              <i
+                class="fas fa-sort-up sortArrow"
+                (click)="sortNewDate()"
+                [class.active]="transactionsService.newDate"
+              ></i>
+              <i
+                class="fas fa-sort-down sortArrow"
+                (click)="sortOldDate()"
+                [class.active]="transactionsService.oldDate"
+              ></i>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (transaction of transactions; track $index) {
+        <tr>
+          <td>{{ transaction.accountId }}</td>
+          <td>{{ transaction.accountName }}</td>
+          <td>{{ transaction.voucherNo }}</td>
+          <td>{{ transaction.amount }}</td>
+          <td>{{ transaction.type }}</td>
+          <td>{{ transaction.branch }}</td>
+          <td>{{ transaction.date }}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <app-pagination
+    [currentPage]="currentPage"
+    [totalPages]="totalPages"
+    (pageChange)="onPageChange($event)"
+    (currentPerPageChange)="ChangeCurrentPerPage($event)"
+  >
+  </app-pagination>
+  } @else{
+  <app-empty-transactions></app-empty-transactions>
+  }
+</div>

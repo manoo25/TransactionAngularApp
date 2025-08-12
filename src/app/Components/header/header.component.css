@@ -1,0 +1,44 @@
+input{
+    border: solid 0.1rem var(--main-color);
+    border-radius: 20px;
+    padding: 3px 10px;
+    outline: 0;
+  
+}
+
+
+
+
+.CurrentPerPage {
+  height: 30px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-color);
+  outline: none;
+  transition: all 0.2s ease;
+ 
+}
+
+.CurrentPerPage:focus {
+  border-color: var(--main-color);
+}
+
+.CurrentPerPage option {
+  background-color: white;
+  color: black;
+}
+
+.CurrentPerPage option:checked,
+.CurrentPerPage option:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+@media screen and (max-width: 575px) {
+  input{
+width: 75%;
+}
+}

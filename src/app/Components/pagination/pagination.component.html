@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-center position-relative pb-4 ">
+  <div class="pagination flex-wrap w-100 mt-5 mt-lg-0">
+    <button (click)="goToPage(1)" [disabled]="currentPage === 1">&laquo;</button>
+<button (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">&lt;</button>
+
+@for (page of [].constructor(totalPages); track $index) {
+  <button 
+        (click)="goToPage($index + 1)"
+        [class.active]="currentPage === $index + 1">
+  {{ $index + 1 }}
+</button>
+}
+
+<button  (click)="goToPage(currentPage + 1)" [disabled]="currentPage === totalPages">&gt;</button>
+<button  (click)="goToPage(totalPages)" [disabled]="currentPage === totalPages">&raquo;</button>
+
+</div>
+  <app-current-per-page
+  (currentPerPageChange)="currentPerPageChange.emit($event)"
+  ></app-current-per-page>
+
+</div>

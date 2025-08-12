@@ -1,0 +1,38 @@
+
+
+
+.CurrentPerPage {
+  z-index: 1;
+  width: 45px;
+  height: 30px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-color);
+  outline: none;
+  transition: all 0.2s ease;
+ 
+}
+.ContainerCurrentSelector{
+ position: absolute;
+  left: 0;
+  top: 10px;
+  transform: translateY(-50%);
+}
+.CurrentPerPage:focus {
+  border-color: var(--main-color);
+}
+
+.CurrentPerPage option {
+  background-color: white;
+  color: black;
+}
+
+.CurrentPerPage option:checked,
+.CurrentPerPage option:hover {
+  background-color: var(--main-color);
+  color: white;
+}
