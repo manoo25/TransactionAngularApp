@@ -78,12 +78,14 @@ Make sure you have installed:
 
 ---
 
-## 📸 Screenshots (Optional)
+## 📸 Screenshots
 <img src='imgs/NoCredit.png'/>
+<img src='imgs/SecondImage.png'/>
 
 ---
 
 ## 👤 Author
 - **Mohamed Salama**  
   [GitHub Profile](https://github.com/manoo25)
+
 
