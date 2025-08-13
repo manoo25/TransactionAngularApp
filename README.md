@@ -79,10 +79,11 @@ Make sure you have installed:
 ---
 
 ## 📸 Screenshots (Optional)
-> You can add screenshots of your application here.
+<img src='imgs/NoCredit.png'/>
 
 ---
 
 ## 👤 Author
 - **Mohamed Salama**  
   [GitHub Profile](https://github.com/manoo25)
+
