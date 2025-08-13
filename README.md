@@ -79,14 +79,16 @@ Make sure you have installed:
 ---
 
 ## 📸 Screenshots
-<img src='/imgs/mob.png'/>
-<img src='imgs/screen.png'/>
+<img src='https://raw.githubusercontent.com/manoo25/TransactionAngularApp/main/public/imgs/mob.png'/>
+<img src='https://raw.githubusercontent.com/manoo25/TransactionAngularApp/main/public/imgs/screen.png'/>
+
 
 ---
 
 ## 👤 Author
 - **Mohamed Salama**  
   [GitHub Profile](https://github.com/manoo25)
+
 
 
 
