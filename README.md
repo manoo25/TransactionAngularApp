@@ -79,7 +79,7 @@ Make sure you have installed:
 ---
 
 ## 📸 Screenshots
-<img src='imgs/mob.png'/>
+<img src='/imgs/mob.png'/>
 <img src='imgs/screen.png'/>
 
 ---
@@ -87,6 +87,7 @@ Make sure you have installed:
 ## 👤 Author
 - **Mohamed Salama**  
   [GitHub Profile](https://github.com/manoo25)
+
 
 
 
