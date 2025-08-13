@@ -79,13 +79,14 @@ Make sure you have installed:
 ---
 
 ## 📸 Screenshots
-<img src='imgs/NoCredit.png'/>
-<img src='imgs/SecondImage.png'/>
+<img src='imgs/mob.png'/>
+<img src='imgs/screen.png'/>
 
 ---
 
 ## 👤 Author
 - **Mohamed Salama**  
   [GitHub Profile](https://github.com/manoo25)
+
 
 
